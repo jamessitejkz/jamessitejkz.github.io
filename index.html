@@ -1,0 +1,2046 @@
+html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKZ Home Improvement | Premium Roofing, Flooring & Renovations Laurinburg NC</title>
+    <meta name="description" content="JKZ Home Improvement by James M. Chavis offers premium roofing, flooring, renovations, vinyl siding, and general contracting in Laurinburg, Pinehurst, Southern Pines, and surrounding North Carolina communities. Get a free luxury quote today!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fbf8eb',
+                            100: '#f5edcb',
+                            200: '#ebd999',
+                            300: '#dec05f',
+                            400: '#d2a433',
+                            500: '#c58b24',
+                            600: '#aa6d1b',
+                            700: '#864f17',
+                            800: '#6d3f18',
+                            900: '#5c3318',
+                            950: '#351b0a',
+                        },
+                        charcoal: {
+                            50: '#f6f6f6',
+                            100: '#e7e7e7',
+                            200: '#d1d1d1',
+                            300: '#b0b0b0',
+                            400: '#888888',
+                            500: '#6d6d6d',
+                            600: '#5d5d5d',
+                            700: '#4f4f4f',
+                            800: '#2c2c2c',
+                            900: '#1a1a1a',
+                            950: '#0f0f0f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://jkzhomeimprovement.com/#organization",
+          "name": "JKZ Home Improvement",
+          "alternateName": "JKZ Construction & Home Renovations",
+          "url": "https://jkzhomeimprovement.com",
+          "telephone": "+1-910-416-3906",
+          "email": "jchavis365247@gmail.com",
+          "logo": "https://images.unsplash.com/photo-1581094288338-2314dddb7eed?auto=format&fit=crop&w=300&q=80",
+          "image": [
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Laurinburg Area",
+            "addressLocality": "Laurinburg",
+            "addressRegion": "NC",
+            "postalCode": "28352",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "34.7740",
+            "longitude": "-79.4628"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "07:00",
+            "closes": "19:00"
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jkzhomeimprovement.com/#website",
+          "url": "https://jkzhomeimprovement.com",
+          "name": "JKZ Home Improvement",
+          "description": "Premium Roofing, Flooring & Home Improvements in Laurinburg, North Carolina"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Glassmorphism Classes */
+        .glass-nav {
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(197, 139, 36, 0.2);
+        }
+        .glass-card {
+            background: rgba(44, 44, 44, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 139, 36, 0.1);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(197, 139, 36, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(197, 139, 36, 0.25);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f0f0f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c58b24;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #aa6d1b;
+        }
+    </style>
+</head>
+<body class="bg-charcoal-950 text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- Loading Screen -->
+    <div id="loader" class="fixed inset-0 bg-charcoal-950 z-[9999] flex flex-col justify-center items-center transition-all duration-700">
+        <div class="relative flex flex-col items-center">
+            <!-- Custom animated logo geometric block -->
+            <div class="w-16 h-16 border-t-4 border-l-4 border-gold-500 rounded-tl-2xl animate-spin mb-4"></div>
+            <h1 class="text-3xl font-serif font-bold tracking-widest text-white uppercase">JKZ</h1>
+            <p class="text-gold-400 text-xs tracking-widest mt-2 uppercase">Crafting Perfection</p>
+            <div class="w-48 bg-charcoal-800 h-1 mt-6 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-gold-500 to-gold-300 h-full animate-[pulse_1.5s_infinite] w-2/3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-200 z-[9999] transition-all duration-100" style="width: 0%"></div>
+
+    <!-- Floating Top Emergency Bar -->
+    <div class="bg-gradient-to-r from-gold-700 to-charcoal-950 text-white py-2 px-4 text-center text-xs md:text-sm font-medium tracking-wide border-b border-gold-600/30 flex justify-between items-center gap-2 max-w-full overflow-hidden">
+        <div class="flex items-center gap-1.5 mx-auto">
+            <span class="inline-block w-2.5 h-2.5 bg-red-500 rounded-full animate-ping"></span>
+            <span class="font-bold">EMERGENCY DAMAGE ASSISTANCE:</span> Roofing, Flooding, Renovations in Scotland Co. & Surrounding NC Areas.
+        </div>
+        <a href="tel:9104163906" class="hidden md:flex items-center gap-1 text-gold-200 hover:text-white transition font-bold whitespace-nowrap">
+            <i data-lucide="phone" class="w-4 h-4"></i> (910) 416-3906
+        </a>
+    </div>
+
+    <!-- Main Header / Navigation -->
+    <header class="sticky top-0 z-[100] transition-all duration-300 glass-nav" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="bg-gradient-to-br from-gold-400 to-gold-700 p-2.5 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-105 transition-all duration-300">
+                    <span class="font-serif font-black text-2xl text-charcoal-950 tracking-tighter">JKZ</span>
+                </div>
+                <div>
+                    <h2 class="text-lg font-serif font-bold tracking-wide text-white group-hover:text-gold-400 transition-colors">HOME IMPROVEMENT</h2>
+                    <p class="text-[9px] text-gold-400 tracking-[0.2em] font-medium uppercase">By James M. Chavis</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm tracking-wider font-medium uppercase text-charcoal-300">
+                <a href="#services" class="hover:text-gold-400 transition-all">Services</a>
+                <a href="#about" class="hover:text-gold-400 transition-all">About Us</a>
+                <a href="#gallery" class="hover:text-gold-400 transition-all">Gallery</a>
+                <a href="#coverage" class="hover:text-gold-400 transition-all">Coverage</a>
+                <a href="#reviews" class="hover:text-gold-400 transition-all">Testimonials</a>
+                <a href="#faq" class="hover:text-gold-400 transition-all">FAQ</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="tel:9104163906" class="flex items-center gap-2 text-gold-400 hover:text-gold-300 transition-colors font-bold text-sm">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    (910) 416-3906
+                </a>
+                <a href="#quote-center" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-charcoal-950 font-bold px-5 py-2.5 rounded-lg text-xs uppercase tracking-wider transition-all shadow-lg shadow-gold-500/20 hover:shadow-gold-600/40">
+                    Get Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-charcoal-300 hover:text-gold-400 focus:outline-none" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu" class="w-6 h-6 block" id="menu-icon-open"></i>
+                <i data-lucide="x" class="w-6 h-6 hidden" id="menu-icon-close"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-charcoal-950 border-t border-gold-600/20 py-6 px-4 space-y-4 shadow-2xl transition-all duration-300">
+            <nav class="flex flex-col space-y-4 font-medium uppercase tracking-wider text-sm text-charcoal-200">
+                <a href="#services" class="mobile-nav-link hover:text-gold-400 py-2 border-b border-charcoal-800 transition">Services</a>
+                <a href="#about" class="mobile-nav-link hover:text-gold-400 py-2 border-b border-charcoal-800 transition">About Us</a>
+                <a href="#gallery" class="mobile-nav-link hover:text-gold-400 py-2 border-b border-charcoal-800 transition">Gallery</a>
+                <a href="#coverage" class="mobile-nav-link hover:text-gold-400 py-2 border-b border-charcoal-800 transition">Coverage</a>
+                <a href="#reviews" class="mobile-nav-link hover:text-gold-400 py-2 border-b border-charcoal-800 transition">Testimonials</a>
+                <a href="#faq" class="mobile-nav-link hover:text-gold-400 py-2 border-b border-charcoal-800 transition">FAQ</a>
+            </nav>
+            <div class="pt-4 flex flex-col gap-4">
+                <a href="tel:9104163906" class="flex items-center justify-center gap-2 bg-charcoal-900 border border-gold-500/30 text-gold-400 py-3 rounded-lg font-bold">
+                    <i data-lucide="phone" class="w-5 h-5"></i> Call: (910) 416-3906
+                </a>
+                <a href="#booking" class="mobile-nav-link bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 py-3 rounded-lg font-bold text-center uppercase tracking-wider text-sm shadow-lg">
+                    Schedule Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden bg-charcoal-950">
+        <!-- Background Imagery / Gradient -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-charcoal-950/80 via-charcoal-950/80 to-charcoal-950 z-10"></div>
+            <!-- Interactive High-Quality Image Background (Dynamic Crossfade Placeholder) -->
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Luxury Home Exterior Renovation" class="w-full h-full object-cover filter brightness-[0.4] scale-105 transition-all duration-[10s] ease-out animate-[pulse_8s_infinite]">
+        </div>
+
+        <!-- Luxury Content Wrapper -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center lg:text-left flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left Text Column -->
+            <div class="w-full lg:w-3/5 space-y-6">
+                <!-- Elite Badge -->
+                <div class="inline-flex items-center gap-2 bg-charcoal-900/90 border border-gold-500/40 px-3.5 py-1.5 rounded-full text-gold-400 text-xs font-semibold tracking-wider uppercase shadow-md mx-auto lg:mx-0">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-gold-500"></i> Licensed, Bonded & Insured Professional Contractor
+                </div>
+
+                <!-- Epic Heading with Dynamic Highlight -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-black tracking-tight leading-none text-white">
+                    Premium Home Craftsmanship in <span class="bg-gradient-to-r from-gold-300 via-gold-500 to-gold-200 bg-clip-text text-transparent">Laurinburg & Sandhills</span>
+                </h1>
+
+                <!-- Persuasive Marketing Copy -->
+                <p class="text-charcoal-300 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Your vision. Our expertise. Let’s build something extraordinary. Owner <strong class="text-white">James M. Chavis</strong> and the elite JKZ team deliver unmatched roofing, flooring, and whole-home remodeling services built to stand the test of time.
+                </p>
+
+                <!-- Value Pillar Icons -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 max-w-lg mx-auto lg:mx-0">
+                    <div class="flex items-center gap-2 text-charcoal-200 text-sm">
+                        <div class="bg-gold-500/20 p-2 rounded-lg"><i data-lucide="award" class="w-5 h-5 text-gold-400"></i></div>
+                        <span>Unmatched Quality</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-charcoal-200 text-sm">
+                        <div class="bg-gold-500/20 p-2 rounded-lg"><i data-lucide="users-round" class="w-5 h-5 text-gold-400"></i></div>
+                        <span>Local & Trusted</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-charcoal-200 text-sm col-span-2 sm:col-span-1">
+                        <div class="bg-gold-500/20 p-2 rounded-lg"><i data-lucide="badge-dollar-sign" class="w-5 h-5 text-gold-400"></i></div>
+                        <span>Financing Ready</span>
+                    </div>
+                </div>
+
+                <!-- Action CTA Cluster -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-6">
+                    <a href="#quote-center" class="w-full sm:w-auto bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-charcoal-950 hover:from-gold-600 hover:to-gold-700 font-bold px-8 py-4 rounded-xl text-sm uppercase tracking-widest text-center shadow-xl shadow-gold-500/20 transition-all duration-300">
+                        Get Your Free Luxury Quote
+                    </a>
+                    <a href="#booking" class="w-full sm:w-auto bg-charcoal-900 border border-gold-500/40 text-white hover:bg-charcoal-850 hover:border-gold-400 font-semibold px-8 py-4 rounded-xl text-sm tracking-widest text-center transition-all duration-300">
+                        Schedule Consultation
+                    </a>
+                </div>
+
+                <!-- Trust Stats -->
+                <div class="pt-6 flex flex-wrap gap-6 justify-center lg:justify-start text-xs uppercase tracking-widest text-gold-400/80 font-semibold">
+                    <span class="flex items-center gap-1"><i data-lucide="check" class="w-4 h-4"></i> 100% Satisfaction Guarantee</span>
+                    <span class="flex items-center gap-1"><i data-lucide="check" class="w-4 h-4"></i> Free In-Home Estimations</span>
+                </div>
+            </div>
+
+            <!-- Right Visual Conversion Column -->
+            <div class="w-full lg:w-2/5">
+                <!-- Conversion-Focused Quick Form Block -->
+                <div class="bg-charcoal-900/95 border-2 border-gold-500/30 rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-16 -top-16 w-32 h-32 bg-gold-500/10 rounded-full blur-2xl"></div>
+                    
+                    <h3 class="text-xl font-serif font-bold text-white mb-2 text-center">Request a Fast Estimate</h3>
+                    <p class="text-xs text-charcoal-400 mb-6 text-center">Receive a custom estimate callback within 24 hours.</p>
+
+                    <form id="hero-estimate-form" class="space-y-4">
+                        <div>
+                            <label class="block text-[11px] uppercase tracking-wider font-semibold text-gold-400 mb-1">Your Name</label>
+                            <input type="text" id="hero-name" required placeholder="John Doe" class="w-full bg-charcoal-950/80 border border-charcoal-800 rounded-lg py-2.5 px-3 text-white placeholder-charcoal-600 focus:outline-none focus:border-gold-500 text-sm transition">
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-[11px] uppercase tracking-wider font-semibold text-gold-400 mb-1">Phone Number</label>
+                                <input type="tel" id="hero-phone" required placeholder="(910) 555-0199" class="w-full bg-charcoal-950/80 border border-charcoal-800 rounded-lg py-2.5 px-3 text-white placeholder-charcoal-600 focus:outline-none focus:border-gold-500 text-sm transition">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] uppercase tracking-wider font-semibold text-gold-400 mb-1">Service Requested</label>
+                                <select id="hero-service" class="w-full bg-charcoal-950/80 border border-charcoal-800 rounded-lg py-2.5 px-3 text-white focus:outline-none focus:border-gold-500 text-sm transition">
+                                    <option>Roofing</option>
+                                    <option>Flooring</option>
+                                    <option>Vinyl Siding</option>
+                                    <option>Home Renovation</option>
+                                    <option>Plumbing / Repairs</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] uppercase tracking-wider font-semibold text-gold-400 mb-1">Project Details</label>
+                            <textarea id="hero-details" placeholder="Briefly describe your dream project..." rows="2" class="w-full bg-charcoal-950/80 border border-charcoal-800 rounded-lg py-2.5 px-3 text-white placeholder-charcoal-600 focus:outline-none focus:border-gold-500 text-sm transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-charcoal-950 font-bold py-3 rounded-lg text-xs uppercase tracking-wider transition duration-300 shadow-md">
+                            Submit Estimate Request
+                        </button>
+                    </form>
+                    <div id="hero-estimate-success" class="hidden mt-4 p-4 bg-green-950/50 border border-green-500/30 text-green-300 text-xs rounded-lg text-center font-medium">
+                        Request received! James and the team will contact you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST STATS SECTION -->
+    <section class="bg-charcoal-900 border-y border-gold-500/15 py-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-1">
+                    <p class="text-4xl md:text-5xl font-serif font-bold text-gold-400">100%</p>
+                    <p class="text-[11px] tracking-widest text-charcoal-400 font-semibold uppercase">Licensed & Insured</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-4xl md:text-5xl font-serif font-bold text-gold-400">12+</p>
+                    <p class="text-[11px] tracking-widest text-charcoal-400 font-semibold uppercase">Service Areas in NC</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-4xl md:text-5xl font-serif font-bold text-gold-400">5-Star</p>
+                    <p class="text-[11px] tracking-widest text-charcoal-400 font-semibold uppercase">Client Ratings</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-4xl md:text-5xl font-serif font-bold text-gold-400">FREE</p>
+                    <p class="text-[11px] tracking-widest text-charcoal-400 font-semibold uppercase">Consultations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT JKZ & MEET THE OWNER -->
+    <section id="about" class="py-24 bg-charcoal-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                
+                <!-- Left Visual Image Collage -->
+                <div class="lg:col-span-5 relative space-y-4">
+                    <div class="relative rounded-2xl overflow-hidden border border-gold-500/20 shadow-2xl">
+                        <!-- High quality contractor imagery -->
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Roofing Construction Process" class="w-full h-auto object-cover filter brightness-[0.9]">
+                        <div class="absolute bottom-4 left-4 bg-charcoal-950/90 border border-gold-500/30 px-4 py-2.5 rounded-xl flex items-center gap-3">
+                            <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-xs font-bold text-white tracking-wider">Owner on Every Site</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative overlay card -->
+                    <div class="absolute -bottom-8 -right-4 md:-right-8 bg-gradient-to-br from-charcoal-900 to-charcoal-950 border-2 border-gold-500/40 p-6 rounded-2xl shadow-2xl max-w-xs">
+                        <p class="font-serif italic text-gold-300 text-sm">"We build with precision, care, and absolute dedication to your home's integrity. No shortcuts."</p>
+                        <p class="mt-3 text-xs text-white font-bold tracking-widest uppercase">— James M. Chavis</p>
+                    </div>
+                </div>
+
+                <!-- Right Narrative Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Our Heritage</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Meet the Driving Force: James M. Chavis & the JKZ Promise</h2>
+                    </div>
+
+                    <p class="text-charcoal-300 leading-relaxed font-light">
+                        For years, <strong>JKZ Home Improvement</strong> has stood as a beacon of unmatched reliability and elite craftsmanship across North Carolina. Under the personal stewardship of owner <strong class="text-white">James M. Chavis</strong>, our business has established a solid reputation built upon transparency, meticulous skill, and premium materials.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="bg-gold-500/10 p-2.5 rounded-lg border border-gold-500/20 text-gold-400 mt-1">
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Uncompromised Standard of Materiality</h4>
+                                <p class="text-sm text-charcoal-400">We utilize top-tier architectural shingles, ultra-durable vinyl siding, premium hardwood & luxury vinyl tile, and heavy-duty structural doors.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="bg-gold-500/10 p-2.5 rounded-lg border border-gold-500/20 text-gold-400 mt-1">
+                                <i data-lucide="shield" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Worry-Free Warranty Shield</h4>
+                                <p class="text-sm text-charcoal-400">All structural roofing, siding, and remodeling projects are backed by our written warranty pledge for guaranteed peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full border border-gold-500/40 bg-charcoal-900 flex items-center justify-center text-gold-400">
+                                <i data-lucide="user" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-charcoal-400 tracking-wider">Direct Access Hotline</p>
+                                <a href="tel:9104163906" class="text-gold-400 font-bold text-lg hover:underline">(910) 416-3906</a>
+                            </div>
+                        </div>
+                        <a href="#quote-center" class="bg-charcoal-900 hover:bg-charcoal-850 text-white font-semibold border border-gold-500/40 px-6 py-3 rounded-lg text-sm transition-all shadow-md">
+                            Get Direct Estimate
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM SERVICES SECTION (Interactive Cards) -->
+    <section id="services" class="py-24 bg-charcoal-900 border-y border-gold-500/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Our Specialities</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white tracking-tight">Master-Level Contracting Services</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-200 mx-auto rounded-full"></div>
+                <p class="text-charcoal-300 text-sm sm:text-base font-light">From structural architectural roofing installations to flawless interior luxury floor design, JKZ is the single solution to realize your vision.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Roofing -->
+                <div class="bg-charcoal-950 border border-gold-500/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1628533602431-1542f7c32483?auto=format&fit=crop&w=800&q=80" alt="Roofing Construction" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 bg-gold-500 text-charcoal-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">Architectural Grade</div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-xl font-serif font-bold text-white">Elite Roofing Systems</h3>
+                        <p class="text-xs text-charcoal-300 leading-relaxed">Complete architectural shingle installation, structural repairs, weatherproofing, and rapid storm damage insurance mitigation. Built to stand hurricanes and elements.</p>
+                        <ul class="text-xs space-y-2 text-charcoal-400 font-medium">
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Full Roof Replacements</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Leak Detection & Repair</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Certified Wind & Rain Defense</li>
+                        </ul>
+                        <a href="#quote-center" class="block w-full text-center bg-charcoal-900 border border-gold-500/20 hover:border-gold-400 text-gold-400 hover:text-white py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition">Book Estimate</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Flooring -->
+                <div class="bg-charcoal-950 border border-gold-500/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80" alt="Hardwood Flooring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 bg-gold-500 text-charcoal-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">Luxury Flooring</div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-xl font-serif font-bold text-white">Flawless Flooring</h3>
+                        <p class="text-xs text-charcoal-300 leading-relaxed">Unrivaled hardwood floor installations, luxury vinyl tile (LVT), engineered flooring, and premium carpentry finishes designed for modern aesthetics and high-traffic durability.</p>
+                        <ul class="text-xs space-y-2 text-charcoal-400 font-medium">
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Hardwood & Engineered Wood</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Luxury Vinyl Plank (LVP)</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Subfloor Assessment & Prep</li>
+                        </ul>
+                        <a href="#quote-center" class="block w-full text-center bg-charcoal-900 border border-gold-500/20 hover:border-gold-400 text-gold-400 hover:text-white py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition">Book Estimate</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Renovations -->
+                <div class="bg-charcoal-950 border border-gold-500/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Bathroom Renovation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 bg-gold-500 text-charcoal-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">Full Transformations</div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-xl font-serif font-bold text-white">Home Renovations</h3>
+                        <p class="text-xs text-charcoal-300 leading-relaxed">Turn your current property into a structural masterpiece. Top-to-bottom master suite remodels, custom layout structural adjustments, and premier kitchen/bathroom improvements.</p>
+                        <ul class="text-xs space-y-2 text-charcoal-400 font-medium">
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Full-Scale Remodeling</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Kitchens & Bathroom Upgrades</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Open Concept Layouts</li>
+                        </ul>
+                        <a href="#quote-center" class="block w-full text-center bg-charcoal-900 border border-gold-500/20 hover:border-gold-400 text-gold-400 hover:text-white py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition">Book Estimate</a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Windows & Doors -->
+                <div class="bg-charcoal-950 border border-gold-500/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Modern Window Installation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 bg-gold-500 text-charcoal-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">Energy Efficiency</div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-xl font-serif font-bold text-white">Premium Windows & Doors</h3>
+                        <p class="text-xs text-charcoal-300 leading-relaxed">High-grade double-hung window replacements and gorgeous security entrance doors. Minimize heating bills while modernizing curb appeal instantly.</p>
+                        <ul class="text-xs space-y-2 text-charcoal-400 font-medium">
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> High-Performance Double-Hung</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Custom Exterior Entry Doors</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Airtight Weatherproofing</li>
+                        </ul>
+                        <a href="#quote-center" class="block w-full text-center bg-charcoal-900 border border-gold-500/20 hover:border-gold-400 text-gold-400 hover:text-white py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition">Book Estimate</a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Vinyl Siding -->
+                <div class="bg-charcoal-950 border border-gold-500/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Vinyl Siding Finish" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 bg-gold-500 text-charcoal-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">Maximum Protection</div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-xl font-serif font-bold text-white">Premium Vinyl Siding</h3>
+                        <p class="text-xs text-charcoal-300 leading-relaxed">Premium quality exterior siding replacement engineered to resist fade, impact, and high winds. Give your entire home an instant, vibrant aesthetic transformation.</p>
+                        <ul class="text-xs space-y-2 text-charcoal-400 font-medium">
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Insulated Vinyl Panels</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Wood Shake & Board Alternatives</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Fascia, Soffit, & Trim Details</li>
+                        </ul>
+                        <a href="#quote-center" class="block w-full text-center bg-charcoal-900 border border-gold-500/20 hover:border-gold-400 text-gold-400 hover:text-white py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition">Book Estimate</a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Plumbing & Repairs -->
+                <div class="bg-charcoal-950 border border-gold-500/10 rounded-2xl overflow-hidden shadow-xl hover:border-gold-500/40 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Plumbing and General Home Repairs" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 bg-gold-500 text-charcoal-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">24/7 Response Available</div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-xl font-serif font-bold text-white">Plumbing & General Repairs</h3>
+                        <p class="text-xs text-charcoal-300 leading-relaxed">Skilled residential plumbing installations, leak interventions, fixtures updates, and general high-end structural repairs. No project is too complex for our capabilities.</p>
+                        <ul class="text-xs space-y-2 text-charcoal-400 font-medium">
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Residential Repair Specialists</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Faucet, Shower & Pipe Upgrades</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Prompt Structural Handyman Fixes</li>
+                        </ul>
+                        <a href="#quote-center" class="block w-full text-center bg-charcoal-900 border border-gold-500/20 hover:border-gold-400 text-gold-400 hover:text-white py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider transition">Book Estimate</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BEFORE & AFTER SHOWCASE (Interactive Slider) -->
+    <section class="py-24 bg-charcoal-950 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Witness the Craftsmanship</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Interactive Before & After Masterpieces</h2>
+                    <p class="text-charcoal-300 text-sm font-light leading-relaxed">
+                        Drag the gold slider handle back and forth to inspect our professional workmanship. JKZ transforms deteriorating structures into premium works of architectural beauty.
+                    </p>
+                    <div class="space-y-3 pt-2 text-sm">
+                        <div class="flex items-center gap-2 text-charcoal-200">
+                            <i data-lucide="arrow-right-left" class="w-5 h-5 text-gold-400"></i>
+                            <span>Swipe or drag the slider bar</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-charcoal-200">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-gold-400"></i>
+                            <span>Premium GAF Shingles and precision trim</span>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <a href="#quote-center" class="inline-block bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-charcoal-950 font-bold px-6 py-3.5 rounded-lg text-xs uppercase tracking-wider shadow-lg">
+                            Get Your Project Started
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Slider Container -->
+                <div class="lg:col-span-7 flex justify-center">
+                    <div class="relative w-full max-w-2xl aspect-[4/3] rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl select-none" id="before-after-container">
+                        <!-- Before Image (Base) -->
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80" alt="Before Renovation Exterior" class="absolute inset-0 w-full h-full object-cover filter saturate-50 brightness-75">
+                        <span class="absolute bottom-4 left-4 bg-black/80 text-white font-bold text-xs uppercase tracking-widest py-1.5 px-3 rounded-lg border border-white/20 z-10">Before (Deteriorated)</span>
+
+                        <!-- After Image (Overlay, resized via clip-path) -->
+                        <div class="absolute inset-0 w-full h-full overflow-hidden" id="after-image-wrapper" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="After Renovation Finished Custom Home" class="absolute inset-0 w-full h-full object-cover">
+                            <span class="absolute bottom-4 right-4 bg-gold-500 text-charcoal-950 font-bold text-xs uppercase tracking-widest py-1.5 px-3 rounded-lg border border-gold-600 z-10">After (JKZ Luxury Finish)</span>
+                        </div>
+
+                        <!-- Drag Bar/Handle -->
+                        <div class="absolute top-0 bottom-0 w-1 bg-gold-400 cursor-ew-resize z-20 flex items-center justify-center" id="slider-bar" style="left: 50%;">
+                            <div class="w-10 h-10 bg-gold-500 border-2 border-white rounded-full flex items-center justify-center text-charcoal-950 shadow-2xl transition hover:scale-110">
+                                <i data-lucide="arrow-left-right" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM WORK GALLERY (Interactive Filter & Masonry Style) -->
+    <section id="gallery" class="py-24 bg-charcoal-900 border-y border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Our Portfolio</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Showcase of Completed Architectural Projects</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-200 mx-auto rounded-full"></div>
+                <p class="text-charcoal-300 text-sm font-light">Explore authentic projects completed by the JKZ home services crew. Every image represents master-level carpentry, framing, roofing, and flooring.</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="gallery-filters">
+                <button data-filter="all" class="filter-btn active bg-gold-500 text-charcoal-950 font-bold px-6 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md">All Projects</button>
+                <button data-filter="roofing" class="filter-btn bg-charcoal-950 text-charcoal-300 border border-gold-500/15 hover:border-gold-500/50 font-bold px-6 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all">Roofing</button>
+                <button data-filter="flooring" class="filter-btn bg-charcoal-950 text-charcoal-300 border border-gold-500/15 hover:border-gold-500/50 font-bold px-6 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all">Flooring</button>
+                <button data-filter="renovation" class="filter-btn bg-charcoal-950 text-charcoal-300 border border-gold-500/15 hover:border-gold-500/50 font-bold px-6 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all">Renovations</button>
+                <button data-filter="exteriors" class="filter-btn bg-charcoal-950 text-charcoal-300 border border-gold-500/15 hover:border-gold-500/50 font-bold px-6 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all">Siding & Exteriors</button>
+            </div>
+
+            <!-- Gallery Grid (Structured Masonry Style) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <!-- Project 1 (Roofing) -->
+                <div class="gallery-item group relative rounded-xl overflow-hidden border border-gold-500/10 shadow-lg cursor-pointer" data-category="roofing" onclick="openLightbox('https://images.unsplash.com/photo-1628533602431-1542f7c32483?auto=format&fit=crop&w=1200&q=80', 'Architectural Shingle Roofing Installation', 'Scotland County')">
+                    <img src="https://images.unsplash.com/photo-1628533602431-1542f7c32483?auto=format&fit=crop&w=600&q=80" alt="Roof Installation" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">Roofing</span>
+                        <h4 class="text-white font-bold text-lg">Architectural Shingle Install</h4>
+                        <p class="text-xs text-charcoal-300 mt-1">Scotland County, NC</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Flooring) -->
+                <div class="gallery-item group relative rounded-xl overflow-hidden border border-gold-500/10 shadow-lg cursor-pointer" data-category="flooring" onclick="openLightbox('https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=80', 'Luxury Oak Hardwood Flooring', 'Pinehurst')">
+                    <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=600&q=80" alt="Oak Flooring" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">Flooring</span>
+                        <h4 class="text-white font-bold text-lg">Luxury Oak Hardwood</h4>
+                        <p class="text-xs text-charcoal-300 mt-1">Pinehurst, NC</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Renovation) -->
+                <div class="gallery-item group relative rounded-xl overflow-hidden border border-gold-500/10 shadow-lg cursor-pointer" data-category="renovation" onclick="openLightbox('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80', 'Master Bathroom Luxury Suite Remodel', 'Laurinburg')">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Luxury Bathroom" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">Renovations</span>
+                        <h4 class="text-white font-bold text-lg">Master Suite Renovation</h4>
+                        <p class="text-xs text-charcoal-300 mt-1">Laurinburg, NC</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Siding/Exteriors) -->
+                <div class="gallery-item group relative rounded-xl overflow-hidden border border-gold-500/10 shadow-lg cursor-pointer" data-category="exteriors" onclick="openLightbox('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80', 'Premium Insulated Vinyl Siding Installation', 'Southern Pines')">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80" alt="Vinyl Siding" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">Siding & Exteriors</span>
+                        <h4 class="text-white font-bold text-lg">Insulated Siding Install</h4>
+                        <p class="text-xs text-charcoal-300 mt-1">Southern Pines, NC</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 (Flooring) -->
+                <div class="gallery-item group relative rounded-xl overflow-hidden border border-gold-500/10 shadow-lg cursor-pointer" data-category="flooring" onclick="openLightbox('https://images.unsplash.com/photo-1581094288338-2314dddb7eed?auto=format&fit=crop&w=1200&q=80', 'Waterproof Luxury Vinyl Plank Installation', 'Aberdeen')">
+                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7eed?auto=format&fit=crop&w=600&q=80" alt="LVP Flooring" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">Flooring</span>
+                        <h4 class="text-white font-bold text-lg">Premium Waterproof LVP</h4>
+                        <p class="text-xs text-charcoal-300 mt-1">Aberdeen, NC</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Renovation) -->
+                <div class="gallery-item group relative rounded-xl overflow-hidden border border-gold-500/10 shadow-lg cursor-pointer" data-category="renovation" onclick="openLightbox('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', 'Double-Hung Custom Energy Windows Installation', 'Rockingham')">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Energy Windows" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
+                        <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">Renovations</span>
+                        <h4 class="text-white font-bold text-lg">Custom Window Replacements</h4>
+                        <p class="text-xs text-charcoal-300 mt-1">Rockingham, NC</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE GALLERY LIGHTBOX -->
+    <div id="lightbox" class="fixed inset-0 z-[1000] bg-black/95 flex flex-col justify-center items-center p-4 hidden">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-gold-400 p-2 focus:outline-none" aria-label="Close Gallery Lightbox">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <div class="max-w-4xl w-full flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="" class="max-h-[75vh] w-auto max-w-full rounded-lg border border-gold-500/30 object-contain shadow-2xl">
+            <div class="text-center mt-4">
+                <h3 id="lightbox-title" class="text-xl font-serif font-bold text-white">Project Title</h3>
+                <p id="lightbox-subtitle" class="text-sm text-gold-400">Project Location</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GEOGRAPHIC COVERAGE SECTION -->
+    <section id="coverage" class="py-24 bg-charcoal-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                
+                <!-- Left Details Map/List -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Service Boundaries</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Proudly Renovating Communities Across North Carolina</h2>
+                    <p class="text-charcoal-300 font-light leading-relaxed">
+                        James M. Chavis and the JKZ Home Improvement fleet are strategically deployed to serve homeowners across multiple North Carolina counties. Check our coverage region list:
+                    </p>
+
+                    <!-- Service Counties / Cities Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Laurinburg</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Pinehurst</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Southern Pines</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Aberdeen</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Rockingham</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Hamlet</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Scotland County</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Richmond County</span>
+                        </div>
+                        <div class="bg-charcoal-900 border border-gold-500/10 p-3 rounded-lg flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <span class="text-xs font-bold text-white">Robeson County</span>
+                        </div>
+                    </div>
+
+                    <!-- Callout Info -->
+                    <div class="p-4 bg-charcoal-900/60 border border-gold-500/20 rounded-xl flex gap-3 items-start">
+                        <i data-lucide="info" class="w-5 h-5 text-gold-400 mt-0.5 shrink-0"></i>
+                        <p class="text-xs text-charcoal-300">
+                            <strong>Don't see your specific community?</strong> Don't worry! We routinely travel to outlying North Carolina areas to execute large-scale, high-end commercial and residential home improvements. Contact James directly to confirm availability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Map Visual representation -->
+                <div class="lg:col-span-5">
+                    <div class="bg-charcoal-900 border border-gold-500/25 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+                        <!-- Custom styled CSS decorative local map grid -->
+                        <div class="absolute inset-0 opacity-[0.05] bg-[radial-gradient(#c58b24_1.5px,transparent_1.5px)] [background-size:16px_16px]"></div>
+                        
+                        <div class="text-center relative z-10 py-8 space-y-4">
+                            <div class="w-16 h-16 bg-gold-500/15 border border-gold-500/30 rounded-full flex items-center justify-center mx-auto">
+                                <i data-lucide="map" class="w-8 h-8 text-gold-400"></i>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-white">Sandhills Coverage Zone</h3>
+                            <p class="text-xs text-charcoal-400 leading-relaxed max-w-sm mx-auto">Providing high-end metal/shingle roofing, luxury floor layouts, and custom bathroom transformations across Richmond, Moore, Robeson, and Scotland Counties.</p>
+                            
+                            <div class="pt-4 border-t border-charcoal-800 flex justify-center gap-4 text-xs font-bold text-gold-400 uppercase tracking-widest">
+                                <span><i class="inline-block w-2.5 h-2.5 bg-green-500 rounded-full mr-1.5 animate-pulse"></i>Active Teams</span>
+                                <span><i class="inline-block w-2.5 h-2.5 bg-gold-500 rounded-full mr-1.5"></i>Owner Managed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS & TESTIMONIALS SLIDER -->
+    <section id="reviews" class="py-24 bg-charcoal-900 border-y border-gold-500/10 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Verified Client Words</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Rave Reviews & 5-Star Testimonials</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-200 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Testimonial Slider Inner -->
+            <div class="relative max-w-4xl mx-auto">
+                <div class="overflow-hidden">
+                    <div id="testimonials-slider" class="flex transition-transform duration-500 ease-out" style="transform: translateX(0%);">
+                        
+                        <!-- Slide 1 -->
+                        <div class="w-full shrink-0 px-4">
+                            <div class="bg-charcoal-950 border border-gold-500/15 p-8 rounded-2xl shadow-xl space-y-4 text-center">
+                                <div class="flex justify-center text-gold-400 gap-1">
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                </div>
+                                <p class="text-charcoal-200 text-base font-light italic">"James and his team replaced our old shingle roof in Southern Pines. His bid was extremely fair, and they finished the entire roof replacement in under 2 days. The cleanup was immaculate. 10/10 highly recommended!"</p>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Robert T.</h4>
+                                    <p class="text-xs text-gold-400">Roofing Installation — Southern Pines, NC</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="w-full shrink-0 px-4">
+                            <div class="bg-charcoal-950 border border-gold-500/15 p-8 rounded-2xl shadow-xl space-y-4 text-center">
+                                <div class="flex justify-center text-gold-400 gap-1">
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                </div>
+                                <p class="text-charcoal-200 text-base font-light italic">"The flooring installation in our Lumberton home was perfect. They laid out the vinyl planks so professionally, getting every edge and molding flawlessly correct. True luxury finish at an affordable price."</p>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Jessica M.</h4>
+                                    <p class="text-xs text-gold-400">Vinyl Plank Flooring — Lumberton, NC</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="w-full shrink-0 px-4">
+                            <div class="bg-charcoal-950 border border-gold-500/15 p-8 rounded-2xl shadow-xl space-y-4 text-center">
+                                <div class="flex justify-center text-gold-400 gap-1">
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                </div>
+                                <p class="text-charcoal-200 text-base font-light italic">"JKZ remodeled our entire bathroom suite in Pinehurst. The double vanity install and walk-in shower tiling look completely breathtaking. James provided extreme attention to detail and met all schedules."</p>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Charles D.</h4>
+                                    <p class="text-xs text-gold-400">Bathroom Renovation — Pinehurst, NC</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="flex justify-center gap-4 mt-8">
+                    <button id="prev-testi-btn" class="bg-charcoal-950 border border-gold-500/25 text-gold-400 hover:text-white hover:border-gold-500 p-2.5 rounded-full transition focus:outline-none" aria-label="Previous Testimonial">
+                        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                    </button>
+                    <button id="next-testi-btn" class="bg-charcoal-950 border border-gold-500/25 text-gold-400 hover:text-white hover:border-gold-500 p-2.5 rounded-full transition focus:outline-none" aria-label="Next Testimonial">
+                        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- STEP-BY-STEP PROCESS TIMELINE -->
+    <section class="py-24 bg-charcoal-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Professional Workflow</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">The 4-Step Journey to Your Dream Home</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-200 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 p-6 rounded-2xl relative shadow-lg">
+                    <div class="absolute -top-6 left-6 bg-gradient-to-br from-gold-400 to-gold-600 text-charcoal-950 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg">01</div>
+                    <div class="pt-6 space-y-3">
+                        <h3 class="text-lg font-serif font-bold text-white">Consultation</h3>
+                        <p class="text-xs text-charcoal-400 leading-relaxed">Book a free digital consultation. James or our coordinator will discuss your design ideas, timeline, and spatial metrics.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 p-6 rounded-2xl relative shadow-lg">
+                    <div class="absolute -top-6 left-6 bg-gradient-to-br from-gold-400 to-gold-600 text-charcoal-950 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg">02</div>
+                    <div class="pt-6 space-y-3">
+                        <h3 class="text-lg font-serif font-bold text-white">Custom Proposal</h3>
+                        <p class="text-xs text-charcoal-400 leading-relaxed">Receive an all-inclusive line-item proposal mapping out the premium materials, layout schedules, and written pricing plans.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 p-6 rounded-2xl relative shadow-lg">
+                    <div class="absolute -top-6 left-6 bg-gradient-to-br from-gold-400 to-gold-600 text-charcoal-950 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg">03</div>
+                    <div class="pt-6 space-y-3">
+                        <h3 class="text-lg font-serif font-bold text-white">Master Execution</h3>
+                        <p class="text-xs text-charcoal-400 leading-relaxed">Our licensed craftsmen arrive on-schedule to execute roofing, flooring, or framing to exacting structural specifications.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 p-6 rounded-2xl relative shadow-lg">
+                    <div class="absolute -top-6 left-6 bg-gradient-to-br from-gold-400 to-gold-600 text-charcoal-950 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg">04</div>
+                    <div class="pt-6 space-y-3">
+                        <h3 class="text-lg font-serif font-bold text-white">Owner Walkthrough</h3>
+                        <p class="text-xs text-charcoal-400 leading-relaxed">James M. Chavis personally inspects the project with you. Only after your absolute approval do we sign off.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM QUOTE ESTIMATION CENTER (Interactive Calculator Wizard) -->
+    <section id="quote-center" class="py-24 bg-charcoal-900 border-y border-gold-500/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Fast Budget Planning</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Interactive Estimate Planner</h2>
+                <p class="text-charcoal-300 text-sm font-light">Select your required services and details to receive an immediate personalized assessment.</p>
+            </div>
+
+            <!-- Quote Center Card -->
+            <div class="bg-charcoal-950 border border-gold-500/25 p-6 sm:p-10 rounded-2xl shadow-2xl relative overflow-hidden">
+                <!-- Progress Header -->
+                <div class="flex items-center justify-between border-b border-charcoal-800 pb-6 mb-8 text-xs font-bold uppercase tracking-widest text-gold-400">
+                    <span id="step-indicator">Step 1 of 3: Service Selection</span>
+                    <div class="flex gap-1" id="step-dots">
+                        <span class="w-3 h-3 bg-gold-500 rounded-full"></span>
+                        <span class="w-3 h-3 bg-charcoal-800 rounded-full"></span>
+                        <span class="w-3 h-3 bg-charcoal-800 rounded-full"></span>
+                    </div>
+                </div>
+
+                <!-- Calculator Form -->
+                <form id="calculator-form" class="space-y-6">
+                    
+                    <!-- STEP 1 CONTAINER -->
+                    <div id="wizard-step-1" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-white mb-3">Which primary service does your property require?</label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <label class="border border-gold-500/20 bg-charcoal-900 hover:border-gold-500/60 p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer transition select-none">
+                                    <input type="radio" name="calc-service" value="roofing" checked class="sr-only">
+                                    <i data-lucide="home" class="w-6 h-6 text-gold-400"></i>
+                                    <span class="text-xs font-bold text-white uppercase tracking-wider text-center">Roofing</span>
+                                </label>
+                                <label class="border border-gold-500/20 bg-charcoal-900 hover:border-gold-500/60 p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer transition select-none">
+                                    <input type="radio" name="calc-service" value="flooring" class="sr-only">
+                                    <i data-lucide="grid" class="w-6 h-6 text-gold-400"></i>
+                                    <span class="text-xs font-bold text-white uppercase tracking-wider text-center">Flooring</span>
+                                </label>
+                                <label class="border border-gold-500/20 bg-charcoal-900 hover:border-gold-500/60 p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer transition select-none">
+                                    <input type="radio" name="calc-service" value="renovation" class="sr-only">
+                                    <i data-lucide="wrench" class="w-6 h-6 text-gold-400"></i>
+                                    <span class="text-xs font-bold text-white uppercase tracking-wider text-center">Renovations</span>
+                                </label>
+                                <label class="border border-gold-500/20 bg-charcoal-900 hover:border-gold-500/60 p-4 rounded-xl flex flex-col items-center justify-center gap-2 cursor-pointer transition select-none">
+                                    <input type="radio" name="calc-service" value="siding" class="sr-only">
+                                    <i data-lucide="layers" class="w-6 h-6 text-gold-400"></i>
+                                    <span class="text-xs font-bold text-white uppercase tracking-wider text-center">Vinyl Siding</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-white mb-2">Estimated Size of Area (Sq. Ft.)</label>
+                            <input type="number" id="calc-sqft" value="1500" min="100" max="10000" class="w-full bg-charcoal-900 border border-charcoal-800 rounded-lg py-3 px-4 text-white text-sm focus:outline-none focus:border-gold-500">
+                        </div>
+                    </div>
+
+                    <!-- STEP 2 CONTAINER (Hidden initially) -->
+                    <div id="wizard-step-2" class="space-y-6 hidden">
+                        <div>
+                            <label class="block text-sm font-bold text-white mb-3">Timeline Priority</label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <label class="border border-charcoal-800 bg-charcoal-900 p-3 rounded-lg text-center cursor-pointer block">
+                                    <input type="radio" name="calc-timeline" value="emergency" class="sr-only">
+                                    <span class="block text-xs font-bold text-white">Emergency</span>
+                                </label>
+                                <label class="border border-gold-500/30 bg-charcoal-900 p-3 rounded-lg text-center cursor-pointer block border-2">
+                                    <input type="radio" name="calc-timeline" value="soon" checked class="sr-only">
+                                    <span class="block text-xs font-bold text-white">1-2 Weeks</span>
+                                </label>
+                                <label class="border border-charcoal-800 bg-charcoal-900 p-3 rounded-lg text-center cursor-pointer block">
+                                    <input type="radio" name="calc-timeline" value="planning" class="sr-only">
+                                    <span class="block text-xs font-bold text-white">Planning Stage</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-white mb-2">Materials Luxury Level</label>
+                            <select id="calc-materials" class="w-full bg-charcoal-900 border border-charcoal-800 rounded-lg py-3 px-4 text-white text-sm focus:outline-none focus:border-gold-500">
+                                <option value="standard">Premium Architectural (Standard High Grade)</option>
+                                <option value="luxury">Luxury Custom / Presidential Edition</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3 CONTAINER (Hidden initially) -->
+                    <div id="wizard-step-3" class="space-y-6 hidden">
+                        <div class="space-y-4">
+                            <h4 class="text-white font-bold text-sm">Review Your Information</h4>
+                            <div class="bg-charcoal-900 p-4 rounded-xl space-y-2 text-xs text-charcoal-300">
+                                <p>Service: <strong id="summary-service" class="text-white uppercase">Roofing</strong></p>
+                                <p>Estimated Area: <strong id="summary-sqft" class="text-white">1500 Sq. Ft.</strong></p>
+                                <p>Materials: <strong id="summary-materials" class="text-white">Premium Standard</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <label class="block text-sm font-bold text-white">Contact Info for Complete Estimate Details</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <input type="text" id="calc-name" required placeholder="Full Name" class="w-full bg-charcoal-900 border border-charcoal-800 rounded-lg py-3 px-4 text-white text-sm focus:outline-none focus:border-gold-500">
+                                <input type="tel" id="calc-phone" required placeholder="Phone Number" class="w-full bg-charcoal-900 border border-charcoal-800 rounded-lg py-3 px-4 text-white text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <input type="email" id="calc-email" required placeholder="Email Address" class="w-full bg-charcoal-900 border border-charcoal-800 rounded-lg py-3 px-4 text-white text-sm focus:outline-none focus:border-gold-500">
+                        </div>
+                    </div>
+
+                    <!-- Navigation Action Buttons -->
+                    <div class="flex justify-between items-center pt-6 border-t border-charcoal-800">
+                        <button type="button" id="prev-step-btn" class="bg-charcoal-900 hover:bg-charcoal-850 text-white border border-charcoal-700 font-bold px-6 py-3 rounded-lg text-xs uppercase tracking-wider hidden transition">Back</button>
+                        <button type="button" id="next-step-btn" class="bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-bold px-8 py-3 rounded-lg text-xs uppercase tracking-wider ml-auto transition shadow-md">Next Step</button>
+                        <button type="submit" id="submit-calc-btn" class="bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-bold px-8 py-3 rounded-lg text-xs uppercase tracking-wider ml-auto hidden transition shadow-md">Calculate & Submit</button>
+                    </div>
+
+                </form>
+
+                <!-- Success Screen -->
+                <div id="calc-success-screen" class="hidden text-center py-8 space-y-4">
+                    <div class="w-16 h-16 bg-green-500/10 border border-green-500/30 text-green-400 rounded-full flex items-center justify-center mx-auto">
+                        <i data-lucide="check-circle" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white">Your Request is Registered!</h3>
+                    <p class="text-sm text-charcoal-300 max-w-md mx-auto">
+                        Thank you for submitting your specifications. James M. Chavis will review your project parameters and contact you to schedule an official walkthrough.
+                    </p>
+                    <button onclick="resetCalculator()" class="bg-charcoal-900 border border-gold-500/25 text-gold-400 px-6 py-2.5 rounded-lg text-xs font-bold uppercase transition">Start New Calculation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE APPOINTMENT SCHEDULING SYSTEM (Interactive Calendar & Local Storage) -->
+    <section id="booking" class="py-24 bg-charcoal-950 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Info & Submitted Appointments -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">Direct Scheduling</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Secure Your Private Inspection</h2>
+                    <p class="text-charcoal-300 text-sm leading-relaxed font-light">
+                        Skip the phone tag. Select a convenient time on our interactive calendar dashboard to secure an on-site structural damage, roof, or remodeling inspection.
+                    </p>
+
+                    <div class="p-4 bg-charcoal-900 border border-gold-500/10 rounded-xl space-y-3">
+                        <h4 class="text-white font-bold text-xs uppercase tracking-widest text-gold-400">Why Book Directly?</h4>
+                        <ul class="text-xs space-y-2 text-charcoal-300">
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> No Booking Fees</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Direct consultation with James M. Chavis</li>
+                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Priority response scheduling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Client Stored Bookings Module -->
+                    <div class="space-y-4 pt-4 border-t border-charcoal-800">
+                        <h4 class="text-white font-serif font-bold text-sm">Your Stored Appointments</h4>
+                        <div id="no-appointments-msg" class="text-xs text-charcoal-500 italic bg-charcoal-900/50 p-4 rounded-xl text-center border border-charcoal-800">
+                            No upcoming scheduled visits detected in your local browser history.
+                        </div>
+                        <div id="appointments-list-container" class="space-y-3"></div>
+                    </div>
+                </div>
+
+                <!-- Right Calendar Booking Interface -->
+                <div class="lg:col-span-7">
+                    <div class="bg-charcoal-900 border border-gold-500/25 p-6 sm:p-8 rounded-2xl shadow-2xl space-y-6">
+                        <h3 class="text-xl font-serif font-bold text-white text-center">Interactive Scheduler Panel</h3>
+                        
+                        <div id="booking-system-step1" class="space-y-6">
+                            <!-- Custom Calendar Grid -->
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest font-bold text-gold-400 mb-2 text-center">Select Available Inspection Date</label>
+                                <div class="bg-charcoal-950 p-4 rounded-xl border border-charcoal-800">
+                                    <!-- Month Header -->
+                                    <div class="flex justify-between items-center text-xs font-bold text-white mb-4 uppercase tracking-widest">
+                                        <button type="button" class="text-gold-400 hover:text-white" id="prev-month-btn"><i data-lucide="chevron-left" class="w-4 h-4"></i></button>
+                                        <span id="calendar-month-year">June 2026</span>
+                                        <button type="button" class="text-gold-400 hover:text-white" id="next-month-btn"><i data-lucide="chevron-right" class="w-4 h-4"></i></button>
+                                    </div>
+                                    <!-- Days of Week -->
+                                    <div class="grid grid-cols-7 gap-1 text-center text-[10px] text-charcoal-500 font-bold uppercase mb-2">
+                                        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                                    </div>
+                                    <!-- Days Grid -->
+                                    <div class="grid grid-cols-7 gap-1 text-center" id="calendar-days-grid">
+                                        <!-- Inject calendar days programmatically -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Time Slots -->
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest font-bold text-gold-400 mb-3 text-center">Select Preferred Time Slot</label>
+                                <div class="grid grid-cols-3 gap-2" id="time-slots-container">
+                                    <button type="button" class="time-slot-btn bg-charcoal-950 border border-charcoal-800 text-charcoal-300 py-2 rounded-lg text-xs font-semibold hover:border-gold-500 hover:text-white transition active">08:00 AM</button>
+                                    <button type="button" class="time-slot-btn bg-charcoal-950 border border-charcoal-800 text-charcoal-300 py-2 rounded-lg text-xs font-semibold hover:border-gold-500 hover:text-white transition">10:30 AM</button>
+                                    <button type="button" class="time-slot-btn bg-charcoal-950 border border-charcoal-800 text-charcoal-300 py-2 rounded-lg text-xs font-semibold hover:border-gold-500 hover:text-white transition">01:00 PM</button>
+                                    <button type="button" class="time-slot-btn bg-charcoal-950 border border-charcoal-800 text-charcoal-300 py-2 rounded-lg text-xs font-semibold hover:border-gold-500 hover:text-white transition">03:30 PM</button>
+                                    <button type="button" class="time-slot-btn bg-charcoal-950 border border-charcoal-800 text-charcoal-300 py-2 rounded-lg text-xs font-semibold hover:border-gold-500 hover:text-white transition">05:00 PM</button>
+                                    <button type="button" class="time-slot-btn bg-charcoal-950 border border-charcoal-800 text-charcoal-300 py-2 rounded-lg text-xs font-semibold hover:border-gold-500 hover:text-white transition">06:30 PM</button>
+                                </div>
+                            </div>
+
+                            <!-- Client Contact Forms -->
+                            <div class="space-y-4 pt-4 border-t border-charcoal-800">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <input type="text" id="booking-name" required placeholder="Your Name" class="bg-charcoal-950 border border-charcoal-800 rounded-lg py-2.5 px-4 text-white text-xs focus:outline-none focus:border-gold-500">
+                                    <input type="tel" id="booking-phone" required placeholder="Phone Number" class="bg-charcoal-950 border border-charcoal-800 rounded-lg py-2.5 px-4 text-white text-xs focus:outline-none focus:border-gold-500">
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <input type="email" id="booking-email" required placeholder="Email Address" class="bg-charcoal-950 border border-charcoal-800 rounded-lg py-2.5 px-4 text-white text-xs focus:outline-none focus:border-gold-500">
+                                    <select id="booking-service" class="bg-charcoal-950 border border-charcoal-800 rounded-lg py-2.5 px-4 text-white text-xs focus:outline-none focus:border-gold-500">
+                                        <option>Roofing</option>
+                                        <option>Flooring</option>
+                                        <option>Vinyl Siding</option>
+                                        <option>Home Renovation</option>
+                                        <option>Plumbing & Repairs</option>
+                                    </select>
+                                </div>
+                                <textarea id="booking-desc" placeholder="Briefly describe what needs inspection..." class="w-full bg-charcoal-950 border border-charcoal-800 rounded-lg py-2.5 px-4 text-white text-xs focus:outline-none focus:border-gold-500" rows="2"></textarea>
+                                
+                                <button type="button" onclick="submitBooking()" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-charcoal-950 font-bold py-3 rounded-lg text-xs uppercase tracking-wider transition duration-300 shadow-md">
+                                    Register Scheduled Walkthrough
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FINANCING INFORMATION -->
+    <section class="py-16 bg-charcoal-900 border-y border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="bg-gradient-to-br from-gold-500/10 to-charcoal-950 p-8 rounded-2xl border border-gold-500/25 max-w-4xl mx-auto space-y-6 relative overflow-hidden">
+                <div class="absolute -left-16 -top-16 w-32 h-32 bg-gold-500/10 rounded-full blur-2xl"></div>
+                
+                <i data-lucide="badge-dollar-sign" class="w-12 h-12 text-gold-400 mx-auto"></i>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white tracking-tight">Flexible Financing Plans Available</h3>
+                <p class="text-charcoal-300 text-sm max-w-2xl mx-auto leading-relaxed">
+                    We believe premium home improvements shouldn't strain your wallet. Through our specialized local lending partnerships, we offer 100% financing for roofs, siding, and entire kitchen transformations with low monthly payments and flexible plans.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-xs font-bold uppercase tracking-widest text-gold-400">
+                    <span><i class="inline-block w-4 h-4 mr-1 text-gold-500" data-lucide="check-circle-2"></i> $0 Down Payment</span>
+                    <span><i class="inline-block w-4 h-4 mr-1 text-gold-500" data-lucide="check-circle-2"></i> Low Interest Rates</span>
+                    <span><i class="inline-block w-4 h-4 mr-1 text-gold-500" data-lucide="check-circle-2"></i> 5-Minute Instant Pre-Approval</span>
+                </div>
+                <a href="#quote-center" class="inline-block bg-gold-500 hover:bg-gold-600 text-charcoal-950 font-bold px-8 py-3 rounded-xl text-xs uppercase tracking-wider shadow-lg transition">Apply for Pre-Approval</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (Interactive Accordion) -->
+    <section id="faq" class="py-24 bg-charcoal-950 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs tracking-[0.25em] text-gold-400 font-bold uppercase block">FAQ Corner</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">Home Improvement Answers</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-200 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Accordion List -->
+            <div class="space-y-4">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 rounded-xl overflow-hidden shadow-md">
+                    <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-white focus:outline-none hover:bg-charcoal-850 transition">
+                        <span class="font-bold text-sm sm:text-base">Does James M. Chavis personally inspect our job site?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-5 border-t border-charcoal-800 text-xs sm:text-sm text-charcoal-300 leading-relaxed">
+                            Yes, absolutely. Under our strict brand promise, owner James M. Chavis personally signs off on scheduling and conducts direct site walkthroughs. You will have direct cellular access to James throughout the entire duration of your project.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 rounded-xl overflow-hidden shadow-md">
+                    <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-white focus:outline-none hover:bg-charcoal-850 transition">
+                        <span class="font-bold text-sm sm:text-base">What towns do you cover in North Carolina?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-5 border-t border-charcoal-800 text-xs sm:text-sm text-charcoal-300 leading-relaxed">
+                            Our main operations hub is in Laurinburg, NC, but our service fleet proudly serves homeowners and commercial developers across Scotland County, Richmond County, Moore County, Robeson County, Lumberton, Aberdeen, Pinehurst, Hamlet, Southern Pines, Rockingham, and Raeford.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 rounded-xl overflow-hidden shadow-md">
+                    <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-white focus:outline-none hover:bg-charcoal-850 transition">
+                        <span class="font-bold text-sm sm:text-base">What brand of materials do you use for roofing?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-5 border-t border-charcoal-800 text-xs sm:text-sm text-charcoal-300 leading-relaxed">
+                            We install industry-leading architectural shingle lines from trusted manufacturers such as GAF (Timberline HDZ), CertainTeed, and Owens Corning. These come with lifetime manufacturer material warranties and premium wind-resistance guarantees.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-charcoal-900 border border-gold-500/10 rounded-xl overflow-hidden shadow-md">
+                    <button class="faq-toggle-btn w-full p-5 text-left flex justify-between items-center text-white focus:outline-none hover:bg-charcoal-850 transition">
+                        <span class="font-bold text-sm sm:text-base">Are you licensed, bonded, and insured in North Carolina?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-400 faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-5 border-t border-charcoal-800 text-xs sm:text-sm text-charcoal-300 leading-relaxed">
+                            Yes. JKZ Home Improvement is fully licensed, general-liability insured, and worker's compensation bonded. We protect our clients, crews, and your physical structures with meticulous regulatory compliance.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSUASIVE LAST CTA CALLOUT -->
+    <section class="py-24 bg-gradient-to-br from-charcoal-900 to-charcoal-950 border-t border-gold-500/10 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Renovations Background" class="w-full h-full object-cover opacity-10">
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white tracking-tight leading-none">Ready to Build Your Extraordinary Structure?</h2>
+            <p class="text-charcoal-300 text-base max-w-xl mx-auto font-light">
+                Connect with owner James M. Chavis right now. Let’s bring your vision to life with elite North Carolina craftsmanship.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="tel:9104163906" class="w-full sm:w-auto bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-xl hover:scale-105 transition-all">
+                    <i data-lucide="phone" class="w-5 h-5"></i> Call: (910) 416-3906
+                </a>
+                <a href="#quote-center" class="w-full sm:w-auto bg-charcoal-950 text-white border border-gold-500/30 px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:border-gold-500 transition-all">
+                    Get Free Digital Estimate
+                </a>
+            </div>
+            <p class="text-[11px] text-charcoal-500 tracking-wider">NO STRINGS ATTACHED • COMPLEMENTARY IN-HOME WRITTEN QUOTES</p>
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="bg-charcoal-950 border-t border-gold-500/15 text-charcoal-400 py-16 text-xs relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+                
+                <!-- Col 1: Identity -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-gradient-to-br from-gold-400 to-gold-700 p-2 rounded-lg flex items-center justify-center">
+                            <span class="font-serif font-black text-xl text-charcoal-950">JKZ</span>
+                        </div>
+                        <h3 class="text-base font-serif font-bold text-white uppercase tracking-wider">JKZ HOME IMPROVEMENT</h3>
+                    </div>
+                    <p class="text-charcoal-400 leading-relaxed text-xs">
+                        "Your Vision. Our Expertise. Let’s Build Something Extraordinary." Elite metal & asphalt roofing, gorgeous hardwood floors, premium vinyl siding, plumbing installs, and whole-home remodeling.
+                    </p>
+                    <div class="text-[11px] text-gold-400 font-bold uppercase tracking-widest">
+                        Owner: James M. Chavis
+                    </div>
+                </div>
+
+                <!-- Col 2: Services Quick Links -->
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest border-b border-charcoal-800 pb-2">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-white transition">Architectural Roofing</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Luxury Vinyl Flooring</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Hardwood Carpentry</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Vinyl Siding Replacement</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Bathroom & Kitchen Remodels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contacts & Info -->
+                <div class="md:col-span-4 space-y-4">
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest border-b border-charcoal-800 pb-2">Direct Contact Hub</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <div>
+                                <p class="text-[10px] text-charcoal-500 uppercase">Direct Cellular Line</p>
+                                <a href="tel:9104163906" class="text-white hover:text-gold-400 font-bold">(910) 416-3906</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <div>
+                                <p class="text-[10px] text-charcoal-500 uppercase">Professional Email</p>
+                                <a href="mailto:jchavis365247@gmail.com" class="text-white hover:text-gold-400">jchavis365247@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0"></i>
+                            <div>
+                                <p class="text-[10px] text-charcoal-500 uppercase">Headquarters</p>
+                                <span class="text-white">Laurinburg, NC 28352 & surrounding Sandhills region</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="border-t border-charcoal-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-charcoal-500">
+                <p>&copy; 2026 JKZ Home Improvement. All Rights Reserved. Built with Premium Standards. Designed for local conversion optimization.</p>
+                <div class="flex gap-4">
+                    <a href="#about" class="hover:underline">Privacy Policy</a>
+                    <a href="#services" class="hover:underline">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING CALL BUTTON (Mobile conversion) -->
+    <a href="tel:9104163906" class="fixed bottom-6 right-6 z-[99] bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-charcoal-950 p-4 rounded-full shadow-2xl transition hover:scale-110 flex items-center justify-center border-2 border-white sm:hidden" aria-label="Direct Phone Line">
+        <i data-lucide="phone" class="w-6 h-6"></i>
+    </a>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" class="fixed bottom-6 left-6 z-[99] bg-charcoal-900 text-gold-400 border border-gold-500/40 p-3 rounded-full shadow-2xl transition hover:scale-110 hover:text-white hidden" aria-label="Scroll Back to Top">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- SIMULATED CHATBOT / AI ASSISTANT PANEL (Floating Corner UI) -->
+    <div id="ai-chat-widget" class="fixed bottom-6 right-6 z-[99] hidden sm:block">
+        <!-- Floating Chat Icon Trigger -->
+        <button id="chat-trigger-btn" class="bg-gradient-to-br from-charcoal-900 to-charcoal-950 border-2 border-gold-500 text-gold-400 hover:text-white p-3.5 rounded-full shadow-2xl transition hover:scale-105 flex items-center gap-2 focus:outline-none" aria-label="Open Project Assistant Chat">
+            <i data-lucide="bot" class="w-6 h-6 text-gold-400"></i>
+            <span class="text-xs font-bold uppercase tracking-wider pr-1 text-white">Project Planner</span>
+            <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-ping absolute top-0 right-0"></span>
+        </button>
+
+        <!-- Dynamic Chat Window Container -->
+        <div id="chat-window" class="hidden absolute bottom-16 right-0 w-80 h-[450px] bg-charcoal-900 border-2 border-gold-500/40 rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-charcoal-950 to-charcoal-900 p-4 border-b border-gold-500/25 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase text-white tracking-widest">JKZ Virtual Assistant</h4>
+                        <p class="text-[9px] text-gold-400">Directly connected to James Chavis info</p>
+                    </div>
+                </div>
+                <button id="close-chat-btn" class="text-charcoal-400 hover:text-gold-400"><i data-lucide="x" class="w-4 h-4"></i></button>
+            </div>
+
+            <!-- Messages Log -->
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 text-xs">
+                <!-- Initial Bot Greeting -->
+                <div class="flex gap-2">
+                    <div class="w-6 h-6 bg-gold-500/10 border border-gold-500/30 rounded-full flex items-center justify-center text-gold-400 shrink-0 text-[10px]"><i data-lucide="bot" class="w-3.5 h-3.5"></i></div>
+                    <div class="bg-charcoal-950 p-2.5 rounded-lg text-charcoal-200 leading-normal max-w-[80%]">
+                        Hello! I am the JKZ AI Project Planner. Ready to transform your property in Laurinburg or Sandhills? I can assist with options, siding materials, and scheduling walkthroughs. Ask me anything!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pre-defined quick options to spark interaction -->
+            <div class="p-2 border-t border-charcoal-800 flex gap-1.5 overflow-x-auto text-[10px] whitespace-nowrap scrollbar-none bg-charcoal-950/60" id="quick-chat-prompts">
+                <button class="chat-prompt-pill border border-gold-500/20 text-gold-400 bg-charcoal-900 px-2 py-1 rounded" onclick="sendQuickMessage('Roofing Options')">Roofing options</button>
+                <button class="chat-prompt-pill border border-gold-500/20 text-gold-400 bg-charcoal-900 px-2 py-1 rounded" onclick="sendQuickMessage('Flooring Materials')">Flooring</button>
+                <button class="chat-prompt-pill border border-gold-500/20 text-gold-400 bg-charcoal-900 px-2 py-1 rounded" onclick="sendQuickMessage('Booking Inquiry')">Book inspection</button>
+            </div>
+
+            <!-- Chat input bar -->
+            <form id="chat-input-form" class="p-3 border-t border-gold-500/25 bg-charcoal-950 flex gap-2">
+                <input type="text" id="chat-input-field" placeholder="Type project question..." class="flex-1 bg-charcoal-900 border border-charcoal-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500">
+                <button type="submit" class="bg-gold-500 hover:bg-gold-600 text-charcoal-950 p-2 rounded-lg flex items-center justify-center shadow"><i data-lucide="send" class="w-4 h-4"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- EXIT INTENT HIGH-CONVERTING POP-UP MODAL -->
+    <div id="exit-intent-modal" class="fixed inset-0 z-[1000] bg-black/80 flex items-center justify-center p-4 hidden">
+        <div class="bg-charcoal-900 border-2 border-gold-500/45 rounded-2xl p-6 sm:p-10 max-w-lg w-full shadow-2xl relative space-y-6">
+            <button id="close-exit-popup" class="absolute top-4 right-4 text-charcoal-400 hover:text-white" aria-label="Close Promo Pop-up"><i data-lucide="x" class="w-6 h-6"></i></button>
+            
+            <div class="text-center space-y-3">
+                <span class="inline-block bg-gold-500/10 border border-gold-500/30 text-gold-400 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Exclusive Sandhills Special Offer</span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white">Wait! Don't Miss Out on This Direct Incentive</h3>
+                <p class="text-xs sm:text-sm text-charcoal-300">
+                    Get <strong class="text-white">$250 OFF</strong> your complete architectural shingle roof replacement or floor overhaul when you book your walkthrough within 48 hours.
+                </p>
+            </div>
+
+            <!-- Direct Micro Capture Form -->
+            <form id="exit-capture-form" class="space-y-3">
+                <div class="grid grid-cols-2 gap-3">
+                    <input type="text" id="exit-name" required placeholder="Your Name" class="bg-charcoal-950 border border-charcoal-850 rounded-lg py-2 px-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                    <input type="tel" id="exit-phone" required placeholder="Phone Number" class="bg-charcoal-950 border border-charcoal-850 rounded-lg py-2 px-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-bold py-3 rounded-lg text-xs uppercase tracking-widest shadow-md">
+                    Claim My Coupon & Fast Estimate
+                </button>
+            </form>
+
+            <div id="exit-success" class="hidden p-3 bg-green-950/40 border border-green-500/30 rounded-lg text-green-300 text-[11px] text-center">
+                Success! Your $250 discount voucher is attached to your phone record. James will call you shortly.
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT SYSTEM ENGINE -->
+    <script>
+        // Start Lucide Icons
+        lucide.createIcons();
+
+        // Screen Loader Dismissal
+        window.onload = function() {
+            setTimeout(function() {
+                const loader = document.getElementById('loader');
+                loader.classList.add('opacity-0');
+                setTimeout(() => loader.classList.add('hidden'), 700);
+            }, 1000);
+        };
+
+        // Scroll Progress & Nav Adjuster
+        window.onscroll = function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Header state change
+            const header = document.getElementById('main-nav');
+            const backToTop = document.getElementById('back-to-top');
+            if (winScroll > 80) {
+                header.classList.add('py-1', 'shadow-2xl');
+                backToTop.classList.remove('hidden');
+            } else {
+                header.classList.remove('py-1', 'shadow-2xl');
+                backToTop.classList.add('hidden');
+            }
+        };
+
+        // Back to top function
+        document.getElementById('back-to-top').onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // Mobile Menu Toggling
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+        });
+
+        // Close mobile nav when clicking any link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+
+        // Interactive Estimate Estimate Form
+        const heroForm = document.getElementById('hero-estimate-form');
+        const heroSuccess = document.getElementById('hero-estimate-success');
+        heroForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('hero-name').value;
+            const phone = document.getElementById('hero-phone').value;
+            const service = document.getElementById('hero-service').value;
+            const details = document.getElementById('hero-details').value;
+
+            // Log details locally inside state storage
+            const estimates = JSON.parse(localStorage.getItem('estimates') || '[]');
+            estimates.push({ name, phone, service, details, date: new Date().toLocaleDateString() });
+            localStorage.setItem('estimates', JSON.stringify(estimates));
+
+            heroForm.reset();
+            heroSuccess.classList.remove('hidden');
+            setTimeout(() => heroSuccess.classList.add('hidden'), 5000);
+        });
+
+        // INTERACTIVE BEFORE-AFTER SLIDER LOGIC
+        const baContainer = document.getElementById('before-after-container');
+        const wrapper = document.getElementById('after-image-wrapper');
+        const bar = document.getElementById('slider-bar');
+
+        const moveSlider = (clientX) => {
+            const rect = baContainer.getBoundingClientRect();
+            let x = clientX - rect.left;
+            // Boundaries
+            if (x < 0) x = 0;
+            if (x > rect.width) x = rect.width;
+            
+            const percent = (x / rect.width) * 100;
+            wrapper.style.clipPath = `polygon(0 0, ${percent}% 0, ${percent}% 100%, 0% 100%)`;
+            bar.style.left = `${percent}%`;
+        };
+
+        // Mouse Drag Interaction
+        let activeDrag = false;
+        baContainer.addEventListener('mousedown', () => activeDrag = true);
+        window.addEventListener('mouseup', () => activeDrag = false);
+        baContainer.addEventListener('mousemove', (e) => {
+            if (!activeDrag) return;
+            moveSlider(e.clientX);
+        });
+
+        // Touch Interaction Support for Smartphones
+        baContainer.addEventListener('touchstart', () => activeDrag = true);
+        window.addEventListener('touchend', () => activeDrag = false);
+        baContainer.addEventListener('touchmove', (e) => {
+            if (!activeDrag) return;
+            moveSlider(e.touches[0].clientX);
+        });
+
+
+        // GALLERY LIGHTBOX & FILTERING LOGIC
+        // Filtering
+        const filterBtns = document.querySelectorAll('#gallery-filters button');
+        const galleryItems = document.querySelectorAll('#gallery-grid .gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active classes
+                filterBtns.forEach(b => b.classList.remove('active', 'bg-gold-500', 'text-charcoal-950'));
+                filterBtns.forEach(b => b.classList.add('bg-charcoal-950', 'text-charcoal-300'));
+                
+                // Set active to clicked
+                btn.classList.add('active', 'bg-gold-500', 'text-charcoal-950');
+                btn.classList.remove('bg-charcoal-950', 'text-charcoal-300');
+
+                const filter = btn.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functions
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxSubtitle = document.getElementById('lightbox-subtitle');
+
+        window.openLightbox = function(url, title, sub) {
+            lightboxImg.src = url;
+            lightboxTitle.innerText = title;
+            lightboxSubtitle.innerText = sub;
+            lightbox.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        };
+
+        window.closeLightbox = function() {
+            lightbox.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        };
+
+
+        // TESTIMONIAL SLIDER IMPLEMENTATION
+        const slider = document.getElementById('testimonials-slider');
+        const nextBtn = document.getElementById('next-testi-btn');
+        const prevBtn = document.getElementById('prev-testi-btn');
+        let testiIndex = 0;
+        const totalTestimonials = 3;
+
+        const renderTestiSlide = () => {
+            slider.style.transform = `translateX(-${testiIndex * 100}%)`;
+        };
+
+        nextBtn.addEventListener('click', () => {
+            testiIndex = (testiIndex + 1) % totalTestimonials;
+            renderTestiSlide();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            testiIndex = (testiIndex - 1 + totalTestimonials) % totalTestimonials;
+            renderTestiSlide();
+        });
+
+
+        // INTERACTIVE BUDGET ESTIMATE PLANNER WIZARD LOGIC
+        let wizardStep = 1;
+        const s1 = document.getElementById('wizard-step-1');
+        const s2 = document.getElementById('wizard-step-2');
+        const s3 = document.getElementById('wizard-step-3');
+        
+        const nextStepBtn = document.getElementById('next-step-btn');
+        const prevStepBtn = document.getElementById('prev-step-btn');
+        const submitCalcBtn = document.getElementById('submit-calc-btn');
+        const indicator = document.getElementById('step-indicator');
+        const stepDots = document.getElementById('step-dots');
+
+        const updateWizardUI = () => {
+            s1.classList.add('hidden');
+            s2.classList.add('hidden');
+            s3.classList.add('hidden');
+
+            if (wizardStep === 1) {
+                s1.classList.remove('hidden');
+                indicator.innerText = "Step 1 of 3: Service Selection";
+                prevStepBtn.classList.add('hidden');
+                nextStepBtn.classList.remove('hidden');
+                submitCalcBtn.classList.add('hidden');
+            } else if (wizardStep === 2) {
+                s2.classList.remove('hidden');
+                indicator.innerText = "Step 2 of 3: Timeline & Materials";
+                prevStepBtn.classList.remove('hidden');
+                nextStepBtn.classList.remove('hidden');
+                submitCalcBtn.classList.add('hidden');
+            } else if (wizardStep === 3) {
+                s3.classList.remove('hidden');
+                indicator.innerText = "Step 3 of 3: Final Review";
+                prevStepBtn.classList.remove('hidden');
+                nextStepBtn.classList.add('hidden');
+                submitCalcBtn.classList.remove('hidden');
+
+                // Populate Summary
+                const service = document.querySelector('input[name="calc-service"]:checked').value;
+                const sqft = document.getElementById('calc-sqft').value;
+                const materials = document.getElementById('calc-materials').value;
+
+                document.getElementById('summary-service').innerText = service;
+                document.getElementById('summary-sqft').innerText = sqft + " Sq. Ft.";
+                document.getElementById('summary-materials').innerText = materials === 'luxury' ? 'Luxury Custom Edition' : 'Premium Architectural Standard';
+            }
+
+            // Dots update
+            stepDots.innerHTML = `
+                <span class="w-3 h-3 rounded-full ${wizardStep >= 1 ? 'bg-gold-500' : 'bg-charcoal-800'}"></span>
+                <span class="w-3 h-3 rounded-full ${wizardStep >= 2 ? 'bg-gold-500' : 'bg-charcoal-800'}"></span>
+                <span class="w-3 h-3 rounded-full ${wizardStep >= 3 ? 'bg-gold-500' : 'bg-charcoal-800'}"></span>
+            `;
+        };
+
+        nextStepBtn.addEventListener('click', () => {
+            if (wizardStep < 3) {
+                wizardStep++;
+                updateWizardUI();
+            }
+        });
+
+        prevStepBtn.addEventListener('click', () => {
+            if (wizardStep > 1) {
+                wizardStep--;
+                updateWizardUI();
+            }
+        });
+
+        // Form Submit
+        const calcForm = document.getElementById('calculator-form');
+        const calcSuccess = document.getElementById('calc-success-screen');
+
+        calcForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const service = document.querySelector('input[name="calc-service"]:checked').value;
+            const sqft = document.getElementById('calc-sqft').value;
+            const timeline = document.querySelector('input[name="calc-timeline"]:checked').value;
+            const materials = document.getElementById('calc-materials').value;
+            const name = document.getElementById('calc-name').value;
+            const phone = document.getElementById('calc-phone').value;
+            const email = document.getElementById('calc-email').value;
+
+            // Save inside persistent browser local history
+            const quotes = JSON.parse(localStorage.getItem('quotes') || '[]');
+            quotes.push({ service, sqft, timeline, materials, name, phone, email, date: new Date().toLocaleDateString() });
+            localStorage.setItem('quotes', JSON.stringify(quotes));
+
+            calcForm.classList.add('hidden');
+            calcSuccess.classList.remove('hidden');
+        });
+
+        window.resetCalculator = function() {
+            calcForm.reset();
+            wizardStep = 1;
+            updateWizardUI();
+            calcForm.classList.remove('hidden');
+            calcSuccess.classList.add('hidden');
+        };
+
+
+        // LIVE APPOINTMENT SCHEDULER SYSTEM
+        let currentYear = 2026;
+        let currentMonth = 5; // June (0-indexed)
+        let selectedDateString = null;
+        let selectedTimeSlot = "08:00 AM";
+
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        const generateCalendar = () => {
+            const grid = document.getElementById('calendar-days-grid');
+            const header = document.getElementById('calendar-month-year');
+            grid.innerHTML = '';
+            header.innerText = `${months[currentMonth]} ${currentYear}`;
+
+            const firstDayIndex = new Date(currentYear, currentMonth, 1).getDay();
+            const lastDay = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+            // Empty spacing days
+            for (let i = 0; i < firstDayIndex; i++) {
+                const emptySpan = document.createElement('span');
+                grid.appendChild(emptySpan);
+            }
+
+            // Fill actual month dates
+            for (let day = 1; day <= lastDay; day++) {
+                const dayBtn = document.createElement('button');
+                dayBtn.type = "button";
+                dayBtn.innerText = day;
+                dayBtn.className = "p-2 text-xs rounded-lg font-semibold hover:bg-gold-500 hover:text-charcoal-950 transition text-charcoal-200 focus:outline-none";
+                
+                // Disable Sundays (Day off)
+                const thisDayOfWeek = new Date(currentYear, currentMonth, day).getDay();
+                if (thisDayOfWeek === 0) {
+                    dayBtn.disabled = true;
+                    dayBtn.className += " opacity-25 cursor-not-allowed";
+                }
+
+                // Match with currently selected date string
+                const thisDateString = `${currentYear}-${currentMonth + 1}-${day}`;
+                if (selectedDateString === thisDateString) {
+                    dayBtn.className += " bg-gold-500 text-charcoal-950 font-black";
+                } else if (day === 21 && currentMonth === 5) {
+                    // Preselect a generic date
+                    selectedDateString = thisDateString;
+                    dayBtn.className += " bg-gold-500 text-charcoal-950 font-black";
+                }
+
+                dayBtn.onclick = () => {
+                    selectedDateString = thisDateString;
+                    generateCalendar();
+                };
+
+                grid.appendChild(dayBtn);
+            }
+        };
+
+        // Prev/Next Months navigation
+        document.getElementById('prev-month-btn').onclick = () => {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            generateCalendar();
+        };
+
+        document.getElementById('next-month-btn').onclick = () => {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            generateCalendar();
+        };
+
+        // Time Slot Selection Handling
+        const slotButtons = document.querySelectorAll('.time-slot-btn');
+        slotButtons.forEach(btn => {
+            btn.onclick = () => {
+                slotButtons.forEach(b => b.classList.remove('bg-gold-500', 'text-charcoal-950', 'active'));
+                slotButtons.forEach(b => b.classList.add('bg-charcoal-950', 'text-charcoal-300'));
+
+                btn.classList.add('bg-gold-500', 'text-charcoal-950', 'active');
+                btn.classList.remove('bg-charcoal-950', 'text-charcoal-300');
+                selectedTimeSlot = btn.innerText;
+            };
+        });
+
+        // Local Storage Appointment Reader
+        const renderStoredAppointments = () => {
+            const list = document.getElementById('appointments-list-container');
+            const emptyMsg = document.getElementById('no-appointments-msg');
+            const appointments = JSON.parse(localStorage.getItem('appointments') || '[]');
+
+            list.innerHTML = '';
+            if (appointments.length === 0) {
+                emptyMsg.classList.remove('hidden');
+                return;
+            }
+
+            emptyMsg.classList.add('hidden');
+            appointments.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = "bg-charcoal-900 border border-gold-500/20 p-4 rounded-xl flex justify-between items-center text-xs";
+                card.innerHTML = `
+                    <div>
+                        <p class="font-bold text-white uppercase">${item.service} Inspection</p>
+                        <p class="text-[10px] text-gold-400 mt-1">${item.date} @ ${item.time}</p>
+                        <p class="text-[9px] text-charcoal-500">Contact: ${item.name}</p>
+                    </div>
+                    <button onclick="cancelAppointment(${index})" class="text-red-500 hover:text-red-400 font-bold uppercase text-[10px]">Cancel</button>
+                `;
+                list.appendChild(card);
+            });
+        };
+
+        window.cancelAppointment = (index) => {
+            const appointments = JSON.parse(localStorage.getItem('appointments') || '[]');
+            appointments.splice(index, 1);
+            localStorage.setItem('appointments', JSON.stringify(appointments));
+            renderStoredAppointments();
+        };
+
+        window.submitBooking = () => {
+            const name = document.getElementById('booking-name').value;
+            const phone = document.getElementById('booking-phone').value;
+            const email = document.getElementById('booking-email').value;
+            const service = document.getElementById('booking-service').value;
+            const desc = document.getElementById('booking-desc').value;
+
+            if (!name || !phone || !email) {
+                alert("Please fill out Name, Phone and Email to register.");
+                return;
+            }
+
+            const appointments = JSON.parse(localStorage.getItem('appointments') || '[]');
+            appointments.push({
+                name, phone, email, service, desc,
+                date: selectedDateString,
+                time: selectedTimeSlot
+            });
+            localStorage.setItem('appointments', JSON.stringify(appointments));
+
+            // Reset Input forms
+            document.getElementById('booking-name').value = '';
+            document.getElementById('booking-phone').value = '';
+            document.getElementById('booking-email').value = '';
+            document.getElementById('booking-desc').value = '';
+
+            renderStoredAppointments();
+            alert("Walkthrough Registered successfully! We saved this to your local browser record.");
+        };
+
+        // Initialize Calendar & Bookings on startup
+        generateCalendar();
+        renderStoredAppointments();
+
+
+        // FAQ INTERACTIVE ACCORDION
+        document.querySelectorAll('.faq-toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.faq-icon');
+
+                if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                    content.style.maxHeight = '0px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    // Close other content areas
+                    document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+                    document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+                    // Open this content area
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(45deg)';
+                }
+            });
+        });
+
+
+        // SIMULATED CHATBOT / AI PROJECT ASSISTANT
+        const chatWidget = document.getElementById('ai-chat-widget');
+        const triggerBtn = document.getElementById('chat-trigger-btn');
+        const chatWin = document.getElementById('chat-window');
+        const closeBtn = document.getElementById('close-chat-btn');
+        const chatForm = document.getElementById('chat-input-form');
+        const chatInput = document.getElementById('chat-input-field');
+        const chatLog = document.getElementById('chat-messages');
+
+        // Open Close Toggles
+        triggerBtn.addEventListener('click', () => {
+            chatWin.classList.toggle('hidden');
+        });
+        closeBtn.addEventListener('click', () => {
+            chatWin.classList.add('hidden');
+        });
+
+        const appendChatMessage = (role, text) => {
+            const msg = document.createElement('div');
+            msg.className = "flex gap-2 " + (role === 'user' ? 'justify-end' : '');
+            
+            if (role === 'bot') {
+                msg.innerHTML = `
+                    <div class="w-6 h-6 bg-gold-500/10 border border-gold-500/30 rounded-full flex items-center justify-center text-gold-400 shrink-0 text-[10px]"><i data-lucide="bot" class="w-3.5 h-3.5"></i></div>
+                    <div class="bg-charcoal-950 p-2.5 rounded-lg text-charcoal-200 leading-normal max-w-[80%]">${text}</div>
+                `;
+            } else {
+                msg.innerHTML = `
+                    <div class="bg-gold-500 text-charcoal-950 p-2.5 rounded-lg font-medium leading-normal max-w-[80%] text-right">${text}</div>
+                `;
+            }
+            chatLog.appendChild(msg);
+            chatLog.scrollTop = chatLog.scrollHeight;
+            lucide.createIcons();
+        };
+
+        const executeBotBrain = (query) => {
+            const q = query.toLowerCase();
+            let reply = "I understand you have questions about your home project! James M. Chavis and the team offer direct guidance. To receive exact figures, please scroll up to schedule a walkthrough on our interactive calendar.";
+
+            if (q.includes('roof') || q.includes('shingle')) {
+                reply = "We install architectural shingles, leak mitigations, and full roof restorations in Laurinburg and Sandhills. We back all structures with a written warranty. Would you like to schedule an inspection?";
+            } else if (q.includes('floor') || q.includes('hardwood') || q.includes('plank')) {
+                reply = "JKZ provides elite luxury flooring transformations, including oak hardwood, LVP (Luxury Vinyl Plank), and laminate installation. Would you like to check out flooring images in our gallery?";
+            } else if (q.includes('price') || q.includes('cost') || q.includes('estimate')) {
+                reply = "Pricing depends on square footage and premium material selection. You can use our Interactive Estimate Planner on this page to quickly map out budget parameters in under 2 minutes!";
+            } else if (q.includes('book') || q.includes('schedule') || q.includes('appointment')) {
+                reply = "Absolutely! You can use our live scheduler dashboard directly on this website. Simply pick an open date, select an available hour, and input your project details.";
+            }
+
+            setTimeout(() => {
+                appendChatMessage('bot', reply);
+            }, 800);
+        };
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const val = chatInput.value.trim();
+            if (!val) return;
+
+            appendChatMessage('user', val);
+            chatInput.value = '';
+            executeBotBrain(val);
+        });
+
+        window.sendQuickMessage = (text) => {
+            appendChatMessage('user', text);
+            executeBotBrain(text);
+        };
+
+
+        // HIGH-CONVERTING EXIT INTENT POP-UP LOGIC
+        let hasShownExitPopup = false;
+
+        const showExitPopup = () => {
+            if (hasShownExitPopup) return;
+            hasShownExitPopup = true;
+            document.getElementById('exit-intent-modal').classList.remove('hidden');
+        };
+
+        // Capture user mouse leaving top viewport border
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY < 50) {
+                showExitPopup();
+            }
+        });
+
+        // Close Pop-up
+        document.getElementById('close-exit-popup').onclick = () => {
+            document.getElementById('exit-intent-modal').classList.add('hidden');
+        };
+
+        // Form capture inside Pop-up
+        const exitForm = document.getElementById('exit-capture-form');
+        const exitSuccess = document.getElementById('exit-success');
+
+        exitForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('exit-name').value;
+            const phone = document.getElementById('exit-phone').value;
+
+            // Save lead
+            const leads = JSON.parse(localStorage.getItem('popup_leads') || '[]');
+            leads.push({ name, phone, date: new Date().toLocaleDateString() });
+            localStorage.setItem('popup_leads', JSON.stringify(leads));
+
+            exitForm.classList.add('hidden');
+            exitSuccess.classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('exit-intent-modal').classList.add('hidden');
+            }, 3000);
+        });
+
+    </script>
+</body>
+</html>
